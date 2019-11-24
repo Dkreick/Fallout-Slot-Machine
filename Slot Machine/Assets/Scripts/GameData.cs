@@ -4,10 +4,17 @@ using UnityEngine;
 
 public class GameData : MonoBehaviour
 {
-  private bool IsSpinning = false;
+  private bool isSpinning = false;
+  private int money;
+  public int score;
 
-  void Start ()
+  public bool GetGameState ()
   {
+    return isSpinning;
+  }
 
+  public void SetGameState (bool value)
+  {
+    isSpinning = value;
   }
 }

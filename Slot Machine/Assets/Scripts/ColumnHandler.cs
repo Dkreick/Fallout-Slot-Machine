@@ -7,10 +7,16 @@ public class ColumnHandler : MonoBehaviour
   [SerializeField]
   public float spinSpeed;
   public int columnHeight;
+  private GameData gameData;
+
+  void Start ()
+  {
+    gameData = FindObjectOfType<GameData> ();
+  }
 
   void Update ()
   {
-    if (IsSpinning)
+    if (gameData.GetGameState ())
     {
       MoveItems ();
     }
