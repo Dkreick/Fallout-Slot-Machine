@@ -1387,6 +1387,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spinSpeed: 10
   columnHeight: 37
+  startSpinningTime: 3
+  isColumnSpinning: 0
 --- !u!1001 &223412831
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3376,6 +3378,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
+  spinButton: {fileID: 813701366}
+  lastColumn: {fileID: 2002386332}
 --- !u!4 &616636200
 Transform:
   m_ObjectHideFlags: 0
@@ -4594,7 +4598,7 @@ GameObject:
   - component: {fileID: 813701367}
   - component: {fileID: 813701366}
   m_Layer: 5
-  m_Name: Button
+  m_Name: SpinButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5971,8 +5975,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cf1178566cb64240ba8a978ba8fc8e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spinSpeed: 5
+  spinSpeed: 10
   columnHeight: 29
+  startSpinningTime: 0
+  isColumnSpinning: 0
 --- !u!1001 &1224592212
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6238,6 +6244,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spinSpeed: 10
   columnHeight: 32
+  startSpinningTime: 2
+  isColumnSpinning: 0
 --- !u!1001 &1288001542
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9379,6 +9387,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spinSpeed: 10
   columnHeight: 37
+  startSpinningTime: 1
+  isColumnSpinning: 0
 --- !u!1 &2002386332
 GameObject:
   m_ObjectHideFlags: 0
@@ -9520,6 +9530,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spinSpeed: 10
   columnHeight: 34
+  startSpinningTime: 4
+  isColumnSpinning: 0
 --- !u!1001 &2049346796
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9915,6 +9927,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spinSpeed: 1000
   columnHeight: 1810
+  startSpinningTime: 0
+  isColumnSpinning: 0
 --- !u!1001 &2134628335
 PrefabInstance:
   m_ObjectHideFlags: 0
