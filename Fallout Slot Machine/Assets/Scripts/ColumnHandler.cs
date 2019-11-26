@@ -15,7 +15,6 @@ public class ColumnHandler : MonoBehaviour
 
   void Start ()
   {
-    // gameData = FindObjectOfType<GameData> ()GetGameState ();
     spinTime = Random.Range (2, 4);
   }
 
